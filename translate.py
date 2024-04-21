@@ -13,6 +13,7 @@ load_dotenv()
 SCOPES = ['https://www.googleapis.com/auth/documents']
 SERVICE_ACCOUNT_FILE = os.getenv.SERVICE_ACCOUNT_FILE 
 DOCUMENT_ID = os.getenv.DOCUMENT_ID
+RAPIDAPI_KEY = os.getenv.RAPIDAPI_KEY
 
 
 def write():
@@ -40,7 +41,7 @@ def write():
             headers = {
                 "content-type": "application/x-www-form-urlencoded",
                 "Accept-Encoding": "application/gzip",
-                "X-RapidAPI-Key": "87b2b3cb55mshc57682867e63f95p1fc225jsn0f780eb36d90",
+                "X-RapidAPI-Key": RAPIDAPI_KEY,
                 "X-RapidAPI-Host": "google-translate1.p.rapidapi.com"
             }
 
